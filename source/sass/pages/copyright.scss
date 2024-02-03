@@ -1,0 +1,47 @@
+@use "../base/variables" as *;
+
+.copyright {
+  display: flex;
+  padding: 20px 0 0;
+
+  @media (min-width: $tablet) {
+    justify-content: end;
+    padding: 0;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    gap: 23px;
+    justify-content: flex-end;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    mask-image: url("../img/stack.svg#html-academy");
+    background-color: $grey-dim;
+    width: 27px;
+    height: 34px;
+  }
+
+  &:hover::after,
+  &:active::after {
+    background-color: $primary-color;
+  }
+}
+
+.copyright__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-text-color;
+}

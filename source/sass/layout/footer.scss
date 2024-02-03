@@ -1,0 +1,58 @@
+@use "../base/variables" as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background: $secondary-bg-color;
+
+  @media (min-width: $tablet) {
+    padding: 57px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 68px 0 66px;
+  }
+}
+
+.footer__container {
+  display: grid;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 19px;
+  fill: $grey-darker;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $text-color-hover;
+  }
+
+  &:active {
+    fill: $text-color-active;
+  }
+}

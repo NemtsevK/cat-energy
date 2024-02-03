@@ -1,0 +1,139 @@
+@use "../base/variables" as *;
+
+.how-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 79px;
+    border-bottom: 1px solid $secondary-border-color;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
+    border: 0;
+  }
+}
+
+.how-work__title {
+  margin: 0 0 40px;
+  line-height: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 72px;
+    line-height: 1;
+  }
+}
+
+.how-work__list {
+  display: grid;
+  align-items: start;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    counter-reset: new 0;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 108px 22%;
+    padding-right: 79px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    padding-right: 0;
+  }
+}
+
+.how-work__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    counter-increment: new 1;
+    grid-template-columns: 1fr;
+    padding: 0 0 25px;
+    gap: 31px;
+  }
+
+  &::before {
+    @media (min-width: $tablet) {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      transform: translate(85%, -40px);
+      content: counter(new);
+      font-family: $secondary-font-family;
+      font-size: 280px;
+      line-height: 1;
+      color: $secondary-bg-color;
+      text-transform: uppercase;
+    }
+  }
+
+  &:first-child::before {
+    @media (min-width: $tablet) {
+      transform: translate(113%, -40px);
+    }
+  }
+}
+
+.how-work__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: $primary-color;
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 80px;
+  }
+
+  &::before {
+    content: "";
+    background-color: $secondary-color;
+  }
+
+  &--leaf::before {
+    mask-image: url("../img/stack.svg#leaf");
+    width: 30px;
+    height: 32px;
+  }
+
+  &--dust::before {
+    mask-image: url("../img/stack.svg#dust");
+    width: 26px;
+    height: 29px;
+  }
+
+  &--eat::before {
+    mask-image: url("../img/stack.svg#eat");
+    width: 25px;
+    height: 30px;
+  }
+
+  &--clock::before {
+    mask-image: url("../img/stack.svg#clock");
+    width: 26px;
+    height: 31px;
+  }
+}
+
+.how-work__description {
+  margin: 0;
+  color: $primary-text-color;
+
+  @media (min-width: $tablet) {
+    line-height: 24px;
+  }
+}
