@@ -1,7 +1,7 @@
 {
   "name": "cat-energy",
   "author": "Nemtsev Konstantin <nemtsevk@hotmail.com> (https://github.com/nemtsev-k)",
-  "description": "Проект «Пинк» от HTML Academy",
+  "description": "Проект «Кэт энерджи» от HTML Academy",
   "homepage": "https://nemtsev-k.github.io/cat-energy/",
   "private": true,
   "devDependencies": {

@@ -44,7 +44,7 @@ const html = () => {
 };
 
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/images/**/*.{png,jpg}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/images'));
 };
@@ -76,14 +76,14 @@ const createStack = () => {
 };
 
 const copy = (done) => {
-  return gulp.src([
+  gulp.src([
     'source/fonts/**/*.woff2',
     'source/*.ico',
     'source/*.webmanifest',
   ], {
     base: 'source'
   })
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build'));
   done();
 };
 
