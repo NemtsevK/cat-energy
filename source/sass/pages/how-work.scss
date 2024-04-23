@@ -105,25 +105,25 @@
   }
 
   &--leaf::before {
-    mask-image: url("../img/stack.svg#leaf");
+    mask-image: url("../images/sprite.svg#leaf");
     width: 30px;
     height: 32px;
   }
 
   &--dust::before {
-    mask-image: url("../img/stack.svg#dust");
+    mask-image: url("../images/sprite.svg#dust");
     width: 26px;
     height: 29px;
   }
 
   &--eat::before {
-    mask-image: url("../img/stack.svg#eat");
+    mask-image: url("../images/sprite.svg#eat");
     width: 25px;
     height: 30px;
   }
 
   &--clock::before {
-    mask-image: url("../img/stack.svg#clock");
+    mask-image: url("../images/sprite.svg#clock");
     width: 26px;
     height: 31px;
   }

@@ -171,11 +171,11 @@
   }
 
   &--email {
-    mask-image: url("../img/stack.svg#email");
+    mask-image: url("../images/sprite.svg#email");
   }
 
   &--phone {
-    mask-image: url("../img/stack.svg#phone");
+    mask-image: url("../images/sprite.svg#phone");
   }
 }
 
@@ -247,7 +247,7 @@
   @include visually-hidden();
 
   &:checked ~ .form__label-checkbox::before {
-    background: url("../img/icons/tick.svg") no-repeat center;
+    background: url("../images/icons/tick.svg") no-repeat center;
     background-size: 21px auto;
     background-clip: content-box;
   }

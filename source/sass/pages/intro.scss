@@ -26,10 +26,10 @@
     background-color: $primary-color;
     background-image: $primary-linear-gradient,
       image-set(
-        url("../img/content/cat-background-mobile.webp") type("image/webp") 1dppx,
-        url("../img/content/cat-background-mobile@2x.webp") type("image/webp") 2dppx,
-        url("../img/content/cat-background-mobile.jpg") type("image/jpg") 1dppx,
-        url("../img/content/cat-background-mobile@2x.jpg") type("image/jpg") 2dppx
+        url("../images/content/cat-background-mobile.webp") type("image/webp") 1dppx,
+        url("../images/content/cat-background-mobile@2x.webp") type("image/webp") 2dppx,
+        url("../images/content/cat-background-mobile.jpg") type("image/jpg") 1dppx,
+        url("../images/content/cat-background-mobile@2x.jpg") type("image/jpg") 2dppx
     );
     background-repeat: no-repeat;
     background-position: center;
@@ -46,10 +46,10 @@
       height: 694px;
       background-image: $primary-linear-gradient,
         image-set(
-          url("../img/content/cat-background-desktop.webp") type("image/webp") 1dppx,
-          url("../img/content/cat-background-desktop@2x.webp") type("image/webp") 2dppx,
-          url("../img/content/cat-background-desktop.jpg") type("image/jpg") 1dppx,
-          url("../img/content/cat-background-desktop@2x.jpg") type("image/jpg") 2dppx
+          url("../images/content/cat-background-desktop.webp") type("image/webp") 1dppx,
+          url("../images/content/cat-background-desktop@2x.webp") type("image/webp") 2dppx,
+          url("../images/content/cat-background-desktop.jpg") type("image/jpg") 1dppx,
+          url("../images/content/cat-background-desktop@2x.jpg") type("image/jpg") 2dppx
       );
       background-position: left;
     }

@@ -46,14 +46,14 @@
   }
 
   &--vkontakte::before {
-    mask-image: url("../img/stack.svg#vkontakte");
+    mask-image: url("../images/sprite.svg#vkontakte");
   }
 
   &--youtube::before {
-    mask-image: url("../img/stack.svg#youtube");
+    mask-image: url("../images/sprite.svg#youtube");
   }
 
   &--telegram::before {
-    mask-image: url("../img/stack.svg#telegram");
+    mask-image: url("../images/sprite.svg#telegram");
   }
 }

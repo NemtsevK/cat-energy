@@ -1,6 +1,9 @@
 {
-  "private": true,
+  "name": "cat-energy",
+  "author": "Nemtsev Konstantin <nemtsevk@hotmail.com> (https://github.com/nemtsev-k)",
+  "description": "Проект «Пинк» от HTML Academy",
   "homepage": "https://nemtsev-k.github.io/cat-energy/",
+  "private": true,
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
@@ -44,7 +47,7 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
+    "source/images/**/*.svg",
     "source/sass/**/*.scss"
   ],
   "engines": {

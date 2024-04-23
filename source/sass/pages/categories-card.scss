@@ -79,12 +79,12 @@
   }
 
   &--slim::before {
-    background-image: url("../img/stack.svg#cat-slim");
+    background-image: url("../images/sprite.svg#cat-slim");
   }
 
   &--pro::before {
     margin-top: 1px;
-    background-image: url("../img/stack.svg#cat-pro");
+    background-image: url("../images/sprite.svg#cat-pro");
 
     @media (min-width: $tablet) {
       margin-top: 5px;
@@ -175,7 +175,7 @@
   &::before {
     content: "";
     display: block;
-    mask-image: url("../img/stack.svg#arrow");
+    mask-image: url("../images/sprite.svg#arrow");
     background-color: currentColor;
     width: 32px;
     height: 12px;
