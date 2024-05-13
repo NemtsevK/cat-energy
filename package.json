@@ -31,17 +31,17 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "gulp",
+    "build": "gulp buildProd",
+    "start": "gulp runDev",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
     "not dead",
-    "not ie <= 11",
     "not op_mini all",
-    "not < 0.25%"
+    "not and_uc > 0",
+    "not < 0.2%"
   ],
   "editorconfig-cli": [
     "*.json",
