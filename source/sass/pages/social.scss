@@ -33,7 +33,7 @@
     display: block;
     background-color: $grey-dim;
     width: 28px;
-    height: 22px;
+    height: 28px;
   }
 
   &:hover::before,
@@ -45,8 +45,8 @@
     opacity: 0.3;
   }
 
-  &--vkontakte::before {
-    mask-image: url("../images/sprite.svg#vkontakte");
+  &--vk::before {
+    mask-image: url("../images/sprite.svg#vk");
   }
 
   &--youtube::before {
@@ -55,5 +55,9 @@
 
   &--telegram::before {
     mask-image: url("../images/sprite.svg#telegram");
+  }
+
+  &--github::before {
+    mask-image: url("../images/sprite.svg#github");
   }
 }

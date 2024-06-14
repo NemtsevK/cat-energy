@@ -1,6 +1,7 @@
 @use "../base/variables" as *;
 
 .location {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,16 +9,6 @@
 
   &--secondary {
     background: $secondary-bg-color;
-  }
-}
-
-.location__container {
-  @media (min-width: $desktop) {
-    position: absolute;
-    height: 400px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 }
 
@@ -34,12 +25,13 @@
   }
 
   @media (min-width: $desktop) {
-    position: relative;
+    position: absolute;
+    top: 50%;
     width: auto;
     gap: 0 81px;
-    margin-top: 95px;
     padding: 61px 78px 60px 80px;
     background: $primary-bg-color;
+    transform: translateY(-50%);
   }
 }
 
