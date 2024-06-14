@@ -1,0 +1,38 @@
+<header class="header {% if currentPage == 'index' %}header--index{% endif %}">
+  <div class="header__container container">
+    <div class="header__logo">
+      <div class="header__logo-inner header__logo-inner--left">
+        <a class="header__logo-link" href="index.html" title="На главную страницу">
+          <picture>
+            <source srcset="images/icons/logo-desktop.svg" media="(min-width: 1440px)">
+            <source srcset="images/icons/logo-tablet.svg" media="(min-width: 768px)">
+            <img class="header__logo-image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+          </picture>
+        </a>
+      </div>
+      <div class="header__logo-inner">
+        <a class="header__logo-link" href="index.html" title="На главную страницу" tabindex="-1">
+          <img class="header__logo-text" src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи">
+        </a>
+      </div>
+    </div>
+    <nav class="header__nav nav nav--closed nav--nojs">
+      <button class="nav__toggle" type="button" aria-label="Открыть меню">
+        <span class="nav__toggle-inner"></span>
+      </button>
+      <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item ">
+            <a class="nav__link {% if currentPage == 'index' %}nav__link--inverted nav__link--current{% endif %}" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link {% if currentPage == 'index' %}nav__link--inverted{% endif %} {% if currentPage == 'catalog' %}nav__link--current{% endif %}" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link {% if currentPage == 'index' %}nav__link--inverted{% endif %} {% if currentPage == 'form' %}nav__link--current{% endif %}" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>

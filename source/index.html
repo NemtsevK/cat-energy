@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% set currentPage = 'index' %}
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -9,53 +10,10 @@
   <meta property="og:url" content="https://nemtsev-k.github.io/cat-energy/">
   <meta name="robots" content="index, follow">
   <title>Интернет-магазин «Кэт энерджи»</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" href="fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  {% include 'templates/_head.html' %}
 </head>
 <body class="page__body">
-<header class="header header--index">
-  <div class="header__container container">
-    <div class="header__logo">
-      <div class="header__logo-inner header__logo-inner--left">
-        <span class="header__logo-link">
-          <picture>
-            <source srcset="images/icons/logo-desktop.svg" media="(min-width: 1440px)">
-            <source srcset="images/icons/logo-tablet.svg" media="(min-width: 768px)">
-            <img class="header__logo-image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-          </picture>
-        </span>
-      </div>
-      <div class="header__logo-inner">
-        <span class="header__logo-link">
-          <img class="header__logo-text" src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи">
-        </span>
-      </div>
-    </div>
-    <nav class="header__nav nav nav--closed nav--nojs">
-      <button class="nav__toggle" type="button" aria-label="Открыть меню">
-        <span class="nav__toggle-inner"></span>
-      </button>
-      <div class="nav__wrapper">
-        <ul class="nav__list">
-          <li class="nav__item ">
-            <a class="nav__link nav__link--inverted nav__link--current" href="index.html">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--inverted" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--inverted" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
+{% include 'templates/_header.html' %}
 <main class="main">
   <section class="main__intro intro">
     <div class="intro__container container">
@@ -194,35 +152,7 @@
     </div>
   </section>
 </main>
-<footer class="footer">
-  <div class="footer__container container">
-    <div class="footer__logo-wrapper">
-      <a class="footer__logo" href="#">
-        <svg width="128" height="24">
-          <use xlink:href="images/sprite.svg#logo-footer"></use>
-        </svg>
-      </a>
-    </div>
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" aria-label="Наша группа ВКонтакте" title="Наша группа ВКонтакте"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" aria-label="Наш канал в YouTube" title="Наш канал в YouTube"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank" aria-label="Наш канал в Телеграм" title="Наш канал в Телеграм"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive/29" target="_blank" title="Онлайн‑курс HTML и CSS. Адаптивная вёрстка и автоматизация">
-        <span class="copyright__text">HTML Academy</span>
-      </a>
-    </div>
-  </div>
-</footer>
+{% include 'templates/_footer.html' %}
 <script src="js/main.js"></script>
 </body>
 </html>
