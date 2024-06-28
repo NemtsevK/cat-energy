@@ -3,8 +3,7 @@
 .gift {
   display: grid;
   justify-content: center;
-  justify-items: center;
-  align-items: center;
+  place-items: center;
   gap: 48px;
   padding: 58px 61px 43px 58px;
   background-color: $primary-color;
@@ -14,7 +13,7 @@
       url("../images/content/gift-mobile@2x.webp") type("image/webp") 2dppx,
       url("../images/content/gift-mobile.jpg") type("image/jpg") 1dppx,
       url("../images/content/gift-mobile@2x.jpg") type("image/jpg") 2dppx
-  );
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,7 +29,7 @@
         url("../images/content/gift-tablet@2x.webp") type("image/webp") 2dppx,
         url("../images/content/gift-tablet.jpg") type("image/jpg") 1dppx,
         url("../images/content/gift-tablet@2x.jpg") type("image/jpg") 2dppx
-    );
+      );
   }
 
   @media (min-width: $desktop) {
@@ -45,7 +44,7 @@
         url("../images/content/gift-desktop@2x.webp") type("image/webp") 2dppx,
         url("../images/content/gift-desktop.jpg") type("image/jpg") 1dppx,
         url("../images/content/gift-desktop@2x.jpg") type("image/jpg") 2dppx
-    );
+      );
   }
 
   &::before {
