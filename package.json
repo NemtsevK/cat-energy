@@ -1,9 +1,9 @@
 {
   "name": "cat-energy",
-  "author": "Nemtsev Konstantin <nemtsevk@hotmail.com> (https://github.com/nemtsev-k)",
+  "author": "Nemtsev Konstantin <nemtsevk@hotmail.com> (https://github.com/NemtsevK)",
   "description": "Личный проект «Кэт энерджи»",
-  "homepage": "https://nemtsev-k.github.io/cat-energy/",
-  "repository": "https://github.com/nemtsev-k/cat-energy",
+  "homepage": "https://nemtsevk.github.io/cat-energy/",
+  "repository": "https://github.com/NemtsevK/cat-energy",
   "private": true,
   "type": "module",
   "devDependencies": {
