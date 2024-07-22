@@ -118,6 +118,12 @@
   {% include 'templates/_location.html' %}
 </main>
 {% include 'templates/_footer.html' %}
-<script src="js/main.js"></script>
+<dialog class="modal" id="modal" aria-label="Информация">
+  <div class="modal__inner">
+    <div class="modal__text"></div>
+    <button class="modal__button button button--second">ОК</button>
+  </div>
+</dialog>
+<script src="js/form.js" type="module"></script>
 </body>
 </html>

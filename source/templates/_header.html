@@ -1,4 +1,4 @@
-<header class="header {% if currentPage == 'index' %}header--index{% endif %}">
+<header class="header {% if currentPage == 'index' %}header--index{% endif %} header--nojs">
   <div class="header__container container">
     <div class="header__logo">
       <div class="header__logo-inner header__logo-inner--left">
@@ -16,10 +16,10 @@
         </a>
       </div>
     </div>
-    <nav class="header__nav nav nav--closed nav--nojs">
-      <button class="nav__toggle" type="button" aria-label="Открыть меню">
-        <span class="nav__toggle-inner"></span>
-      </button>
+    <button class="header__toggle-nav" type="button" aria-label="Открыть меню">
+      <span class="header__toggle-nav-inner"></span>
+    </button>
+    <nav class="header__nav nav nav--closed">
       <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__item ">

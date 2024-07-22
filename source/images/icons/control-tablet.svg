@@ -1,0 +1,10 @@
+<svg width="40" height="560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    .st0{fill:#878787;}
+  </style>
+  <rect x="18" y="0" class="st0" width="4" height="264"/>
+  <path class="st0" d="M20,260c-11,0-20,9-20,20c0,11,9,20,20,20s20-9,20-20C40,269,31,260,20,260z M20,296c-8.8,0-16-7.2-16-16	s7.2-16,16-16s16,7.2,16,16S28.8,296,20,296z"/>
+  <polygon class="st0" points="33.2,280 22,267.3 22,292.7 "/>
+  <polygon class="st0" points="6.8,280 18,292.7 18,267.3 "/>
+  <rect x="18" y="296" class="st0" width="4" height="264"/>
+</svg>
