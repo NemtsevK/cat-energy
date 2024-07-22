@@ -6,7 +6,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import webp from 'gulp-webp';
 import imagemin from 'gulp-imagemin';
@@ -40,8 +39,6 @@ const processMarkup = () => {
   return src([PATH_TO_MARKUP, `!${PATH_TO_TEMPLATES}`])
     .pipe(nunjucksCompile())
     .pipe(replace('.css', '.min.css'))
-    .pipe(replace('.js', '.min.js'))
-    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest(BUILD_ROOT));
 };
 
@@ -61,7 +58,6 @@ const processStyles = () => {
 const processScripts = () => {
   return src(PATH_TO_SCRIPTS)
     .pipe(terser())
-    .pipe(rename({ suffix: '.min' }))
     .pipe(dest(`${BUILD_ROOT}/js`))
     .pipe(browser.stream());
 };
