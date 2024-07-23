@@ -16,7 +16,7 @@
 {% include 'templates/_header.html' %}
 <main class="main">
   <section class="main__program-selection">
-    <form class="form" id="program">
+    <form class="form" id="program" novalidate>
       <div class="form__container container container--narrow">
         <h1 class="form__title title-h1">Подбор программы</h1>
         <p class="form__description">Заполните анкету, и мы подберём программу питания для вашего кота</p>
@@ -24,19 +24,22 @@
           <div class="form__field-text">
             <label class="form__label-text" for="program-name">Имя:*</label>
             <input class="form__input-text" name="name" id="program-name" value="Барсик" required>
+            <span class="form__error-text" id="program-name-error"></span>
           </div>
           <div class="form__field-text">
             <label class="form__label-text" for="program-weight">Вес (кг):*</label>
-            <input class="form__input-text form__input-text--digit" type="number" name="weight" id="program-weight" value="7" required>
+            <input class="form__input-text form__input-text--digit" name="weight" id="program-weight" value="7" required>
+            <span class="form__error-text" id="program-weight-error"></span>
           </div>
           <div class="form__field-text">
             <label class="form__label-text" for="program-age">Возраст (лет):</label>
-            <input class="form__input-text form__input-text--digit" type="number" name="age" id="program-age" value="7">
+            <input class="form__input-text form__input-text--digit" name="age" id="program-age" value="7">
+            <span class="form__error-text" id="program-age-error"></span>
           </div>
         </fieldset>
         <fieldset class="form__radio-area">
           <div class="form__field-radio">
-            <input class="form__input-radio" type="radio" name="program-type" id="program-weight-loss" checked>
+            <input class="form__input-radio" type="radio" name="program-type" id="program-weight-loss">
             <label class="form__label-radio form__label-text" for="program-weight-loss">Похудение</label>
           </div>
           <div class="form__field-radio">
@@ -47,6 +50,7 @@
             <input class="form__input-radio" type="radio" name="program-type" id="program-unknown">
             <label class="form__label-radio form__label-text" for="program-unknown">Не знаю (нужен ваш совет)</label>
           </div>
+          <span class="form__error-switch" id="program-type-error"></span>
         </fieldset>
       </div>
       <fieldset class="form__proprietor-area">
@@ -61,6 +65,7 @@
                 <input class="form__input-text form__input-text--with-icon " type="email" name="email" id="program-email" value="kuklachev@gmail.com" required>
                 <div class="form__input-icon form__input-icon--email"></div>
               </div>
+              <span class="form__error-text" id="program-email-error"></span>
             </div>
             <div class="form__field-text">
               <label class="form__label-text" for="program-phone">Телефон:*</label>
@@ -68,6 +73,7 @@
                 <input class="form__input-text form__input-text--with-icon" type="tel" name="phone" id="program-phone" value="8 (960) 900-60-90" required>
                 <div class="form__input-icon form__input-icon--phone"></div>
               </div>
+              <span class="form__error-text" id="program-phone-error"></span>
             </div>
           </div>
         </div>
@@ -78,6 +84,7 @@
         </div>
         <div class="form__comment-container container container--narrow">
           <textarea class="form__textarea form__input-text" name="comment" id="program-comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарий" rows="5"></textarea>
+          <span class="form__error-text" id="program-comment-error"></span>
         </div>
       </fieldset>
       <fieldset class="form__extra-area">
@@ -103,6 +110,7 @@
               <label class="form__label-checkbox form__label-text" for="program-vitamins">Витамины</label>
             </div>
           </div>
+          <span class="form__error-switch" id="program-vitamins-error"></span>
         </div>
       </fieldset>
       <div class="form__footer">

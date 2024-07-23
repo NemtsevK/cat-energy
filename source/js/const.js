@@ -35,14 +35,14 @@ export const inputsOptions = [
   {
     id: 'program-weight',
     pattern: FLOAT,
-    max: 30,
+    max: 10,
     required: true,
   },
   {
     id: 'program-age',
     pattern: INTEGER,
     max: 3,
-    required: true,
+    required: false,
   },
   {
     id: 'program-email',
@@ -60,6 +60,19 @@ export const inputsOptions = [
     id: 'program-comment',
     pattern: TEXT,
     max: 200,
+    required: false,
+  },
+];
+
+export const radioOptions = [
+  {
+    name: 'program-type',
+    type: 'radio',
     required: true,
+  },
+  {
+    name: 'additionally',
+    type: 'checkbox',
+    required: false,
   },
 ];
