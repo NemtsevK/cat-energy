@@ -12,14 +12,14 @@
   display: flex;
   align-items: center;
   width: 280px;
-  height: 280px;
+  height: 256px;
 
   --slider-thumb-size: 40px;
   --slider-progress: 50;
 
   @media (min-width: $tablet) {
     width: 560px;
-    height: 560px;
+    height: 512px;
   }
 }
 
@@ -71,7 +71,7 @@
   transform: translateX(-50%);
 
   @media (min-width: $tablet) {
-    height: 560px;
+    height: 512px;
   }
 
   &::before {
@@ -80,7 +80,7 @@
     z-index: 90;
     display: block;
     width: var(--slider-thumb-size);
-    height: 280px;
+    height: 256px;
     mask-image: url("../images/icons/control-mobile.svg");
     background-color: #6b6b6b;
     background-size: 100%;
@@ -88,7 +88,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet) {
-      height: 560px;
+      height: 512px;
       mask-image: url("../images/icons/control-tablet.svg");
     }
   }

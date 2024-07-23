@@ -2,6 +2,9 @@
 
 .copyright {
   display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 24px;
   padding: 20px 0 0;
 
   @media (min-width: $tablet) {
@@ -12,9 +15,8 @@
 
 .copyright__link {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
 
   @media (min-width: $tablet) {
     width: auto;
@@ -22,26 +24,31 @@
     justify-content: flex-end;
   }
 
-  &:active {
+  &:hover::before {
+    background-color: $primary-color;
+  }
+
+  &:active::before {
     opacity: 0.3;
   }
 
-  &::after {
+  &::before {
     content: "";
-    mask-image: url("../images/sprite.svg#html-academy");
     background-color: $grey-dim;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--developer::before {
+    mask-image: url("../images/sprite.svg#nemtsevk");
+    width: 30px;
+    height: 30px;
+  }
+
+  &--design::before {
+    mask-image: url("../images/sprite.svg#html-academy");
     width: 27px;
     height: 34px;
   }
-
-  &:hover::after,
-  &:active::after {
-    background-color: $primary-color;
-  }
-}
-
-.copyright__text {
-  font-size: 16px;
-  line-height: 20px;
-  color: $primary-text-color;
 }
