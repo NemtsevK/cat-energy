@@ -57,7 +57,7 @@ function initMenu() {
 }
 
 async function setFormSuccess() {
-  setModal('test');
+  setModal('Данные успешно отправлены');
 }
 
 /**

@@ -39,7 +39,7 @@
         </fieldset>
         <fieldset class="form__radio-area">
           <div class="form__field-radio">
-            <input class="form__input-radio" type="radio" name="program-type" id="program-weight-loss">
+            <input class="form__input-radio" type="radio" name="program-type" id="program-weight-loss" checked>
             <label class="form__label-radio form__label-text" for="program-weight-loss">Похудение</label>
           </div>
           <div class="form__field-radio">
@@ -50,7 +50,7 @@
             <input class="form__input-radio" type="radio" name="program-type" id="program-unknown">
             <label class="form__label-radio form__label-text" for="program-unknown">Не знаю (нужен ваш совет)</label>
           </div>
-          <span class="form__error-switch" id="program-type-error"></span>
+          <span class="form__error-toggle" id="program-type-error"></span>
         </fieldset>
       </div>
       <fieldset class="form__proprietor-area">
@@ -61,18 +61,14 @@
           <div class="form__area-text">
             <div class="form__field-text">
               <label class="form__label-text" for="program-email">E-mail:*</label>
-              <div class="form__input-text-content">
-                <input class="form__input-text form__input-text--with-icon " type="email" name="email" id="program-email" value="kuklachev@gmail.com" required>
-                <div class="form__input-icon form__input-icon--email"></div>
-              </div>
+              <input class="form__input-text form__input-text--with-icon " type="email" name="email" id="program-email" value="kuklachev@gmail.com" required>
+              <div class="form__input-icon form__input-icon--email"></div>
               <span class="form__error-text" id="program-email-error"></span>
             </div>
             <div class="form__field-text">
               <label class="form__label-text" for="program-phone">Телефон:*</label>
-              <div class="form__input-text-content">
-                <input class="form__input-text form__input-text--with-icon" type="tel" name="phone" id="program-phone" value="8 (960) 900-60-90" required>
-                <div class="form__input-icon form__input-icon--phone"></div>
-              </div>
+              <input class="form__input-text form__input-text--with-icon" type="text" name="phone" id="program-phone" value="8 (960) 900-60-90" required>
+              <div class="form__input-icon form__input-icon--phone"></div>
               <span class="form__error-text" id="program-phone-error"></span>
             </div>
           </div>
@@ -110,7 +106,7 @@
               <label class="form__label-checkbox form__label-text" for="program-vitamins">Витамины</label>
             </div>
           </div>
-          <span class="form__error-switch" id="program-vitamins-error"></span>
+          <span class="form__error-toggle" id="additionally-error"></span>
         </div>
       </fieldset>
       <div class="form__footer">

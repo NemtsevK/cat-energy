@@ -2,27 +2,27 @@ export const REGEX = /^[\s\n\t]+$/;
 
 const TEXT = {
   string: /^[A-zА-яЁё0-9.\s-]+$/,
-  name: 'Разрешены только цифры, дефис, точка и буквы английского алфавита',
+  name: 'Разрешены только буквы, цифры, дефис и точка',
 }
 
 const INTEGER = {
   string: /^[0-9]+$/,
-  name: 'Введите целое число.',
+  name: 'Введите целое число',
 }
 
 const FLOAT = {
   string: /^[0-9.,]+$/,
-  name: 'Введите вещественное число.',
+  name: 'Введите вещественное число',
 }
 
 const PHONE = {
-  string: /^[0-9-+]+$/,
-  name: 'Введите номер телефона.',
+  string: /^[0-9-()\s+]+$/,
+  name: 'Введите номер телефона',
 }
 
 const EMAIL = {
   string: /^([a-z0-9._-]+@[a-z0-9._-]+)$/,
-  name: 'Введите адрес электронной почты.',
+  name: 'Введите адрес электронной почты',
 }
 
 export const inputsOptions = [
@@ -62,9 +62,6 @@ export const inputsOptions = [
     max: 200,
     required: false,
   },
-];
-
-export const radioOptions = [
   {
     name: 'program-type',
     type: 'radio',
