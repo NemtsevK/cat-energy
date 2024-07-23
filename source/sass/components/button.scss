@@ -27,7 +27,7 @@
     color: rgba($secondary-color, 0.3);
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 2px solid $focus-button-color;
   }
 }

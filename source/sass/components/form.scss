@@ -85,11 +85,20 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 13px;
+  gap: 0 13px;
 }
 
 .form__input-text-content {
   position: relative;
+}
+
+.form__error-text {
+  grid-column: 2;
+  color: #ff8282;
+
+  &--active {
+    display: block;
+  }
 }
 
 .form__input-text {
@@ -117,11 +126,6 @@
     outline: 1px solid $primary-text-color;
   }
 
-  &:invalid {
-    border-color: $status-error;
-    outline: 1px solid $status-error;
-  }
-
   &::placeholder {
     font-family: $secondary-font-family;
     font-size: 16px;
@@ -144,10 +148,6 @@
     background-color: $primary-color;
   }
 
-  &:invalid + .form__input-icon {
-    background-color: $status-error;
-  }
-
   &--digit {
     appearance: textfield;
 
@@ -155,6 +155,19 @@
       appearance: auto;
     }
   }
+}
+
+.form__input-text--error + .form__input-icon {
+  background-color: #ff8282;
+}
+
+.form__input-text--error:not(:focus) {
+  border-color: #ff8282;
+  outline: 1px solid #ff8282;
+}
+
+.form__input-text--error:focus + .form__error-text--active {
+  display: none;
 }
 
 .form__input-icon {
@@ -350,7 +363,7 @@
 
 .form__area-text {
   display: grid;
-  align-items: center;
+  align-items: start;
   gap: 14px;
 
   @media (min-width: $tablet) {
